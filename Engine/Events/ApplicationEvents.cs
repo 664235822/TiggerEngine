@@ -1,6 +1,6 @@
-namespace Library.Events;
+namespace Engine.Events;
 
-public class WindowResizeEvent : Library.Events.EventBase
+public class WindowResizeEvent : EventBase
 {
     #region Properties
 
@@ -37,7 +37,7 @@ public class WindowResizeEvent : Library.Events.EventBase
     #endregion
 }
 
-public class WindowCloseEvent : Library.Events.EventBase
+public class WindowCloseEvent : EventBase
 {
     #region EventBase
 
@@ -48,7 +48,7 @@ public class WindowCloseEvent : Library.Events.EventBase
     #endregion
 }
 
-public class AppTickEvent : Library.Events.EventBase
+public class AppTickEvent : EventBase
 {
     #region EventBase
 
@@ -59,7 +59,7 @@ public class AppTickEvent : Library.Events.EventBase
     #endregion
 }
 
-public class AppUpdateEvent : Library.Events.EventBase
+public class AppUpdateEvent : EventBase
 {
     #region EventBase
 
@@ -70,7 +70,7 @@ public class AppUpdateEvent : Library.Events.EventBase
     #endregion
 }
 
-public class AppRenderEvent : Library.Events.EventBase
+public class AppRenderEvent : EventBase
 {
     #region EventBase
 

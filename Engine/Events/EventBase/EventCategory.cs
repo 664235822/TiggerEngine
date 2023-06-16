@@ -1,4 +1,4 @@
-namespace Library.Events;
+namespace Engine.Events;
 
 [System.Flags]
 public enum EventCategory : uint

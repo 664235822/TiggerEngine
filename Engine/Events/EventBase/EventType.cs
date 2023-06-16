@@ -1,4 +1,4 @@
-namespace Library.Events;
+namespace Engine.Events;
 
 public enum EventType
 {

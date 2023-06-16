@@ -1,4 +1,4 @@
-namespace Library.Input;
+namespace Engine.Input;
 
 public enum EMouseButton
 {
@@ -6,7 +6,7 @@ public enum EMouseButton
     Button1 = 0,
 
     /// <summary>
-    ///     The left mouse button. This corresponds to <see cref="F:OpenTK.Windowing.GraphicsLibraryFramework.MouseButton.Button1" />.
+    ///     The left mouse button. This corresponds to <see cref="F:OpenTK.Windowing.GraphicsEngineFramework.MouseButton.Button1" />.
     /// </summary>
     Left = 0,
 
@@ -14,7 +14,7 @@ public enum EMouseButton
     Button2 = 1,
 
     /// <summary>
-    ///     The right mouse button. This corresponds to <see cref="F:OpenTK.Windowing.GraphicsLibraryFramework.MouseButton.Button2" />.
+    ///     The right mouse button. This corresponds to <see cref="F:OpenTK.Windowing.GraphicsEngineFramework.MouseButton.Button2" />.
     /// </summary>
     Right = 1,
 
@@ -22,7 +22,7 @@ public enum EMouseButton
     Button3 = 2,
 
     /// <summary>
-    ///     The middle mouse button. This corresponds to <see cref="F:OpenTK.Windowing.GraphicsLibraryFramework.MouseButton.Button3" />.
+    ///     The middle mouse button. This corresponds to <see cref="F:OpenTK.Windowing.GraphicsEngineFramework.MouseButton.Button3" />.
     /// </summary>
     Middle = 2,
 

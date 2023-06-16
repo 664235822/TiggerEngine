@@ -1,4 +1,4 @@
-namespace Library.Input;
+namespace Engine.Input;
 
 public enum EKey
 {

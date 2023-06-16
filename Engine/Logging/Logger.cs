@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
 
-namespace Library.Logging
+namespace Engine.Logging
 {
     public static class Logger
     {

@@ -1,6 +1,6 @@
-namespace Library.Events;
+namespace Engine.Events;
 
-public class MouseMovedEvent : Library.Events.EventBase
+public class MouseMovedEvent : EventBase
 {
     #region Properties
 
@@ -37,7 +37,7 @@ public class MouseMovedEvent : Library.Events.EventBase
     #endregion
 }
 
-public class MouseScrolledEvent : Library.Events.EventBase
+public class MouseScrolledEvent : EventBase
 {
     #region Properties
 
@@ -72,7 +72,7 @@ public class MouseScrolledEvent : Library.Events.EventBase
     #endregion
 }
 
-public class MouseButtonEvent : Library.Events.EventBase
+public class MouseButtonEvent : EventBase
 {
     #region Properties
 
