@@ -3,7 +3,7 @@ using OpenTK.Graphics.OpenGL4;
 
 namespace Engine.Render.Buffers;
 
-public class IndexBuffer
+internal class IndexBuffer : IDisposable
 {
     private readonly int _bufferHandle;
 
@@ -19,4 +19,15 @@ public class IndexBuffer
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void UnBind() => GL.BindBuffer(BufferTarget.ElementArrayBuffer, 0);
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private void ReleaseUnmanagedResources() => GL.DeleteBuffer(_bufferHandle);
+
+    public void Dispose()
+    {
+        ReleaseUnmanagedResources();
+        GC.SuppressFinalize(this);
+    }
+
+    ~IndexBuffer() => ReleaseUnmanagedResources();
 }
