@@ -1,6 +1,6 @@
 ﻿namespace Engine.AssetManager;
 
-public enum AssetType
+public enum EAssetType
 {
     Shader
 }

@@ -18,7 +18,7 @@ internal class Shader : IAsset
 {
     public string FilePath { get; set; }
     public string Name => Path.GetFileNameWithoutExtension(FilePath);
-    public AssetType AssetType => AssetType.Shader;
+    public EAssetType AssetType => EAssetType.Shader;
 
     public List<UniformInfo> Uniforms { get; } = new();
 
