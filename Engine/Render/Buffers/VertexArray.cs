@@ -13,6 +13,7 @@ internal class VertexArray : IDisposable
         GL.BindVertexArray(_vertexArrayHandle);
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void BindAttribute(uint attribute, VertexBuffer vertexBuffer, int count, int stride, int offset)
     {
         Bind();
